@@ -2,6 +2,8 @@
 // import { useOktaAuth } from '@okta/okta-react';
 // import { SpinnerLoading } from "../Utils/SpinnerLoading";
 
+import { NavLink } from "react-router-dom";
+
 export const Navbar = () => {
 
 //   const { oktaAuth, authState } = useOktaAuth();
@@ -28,10 +30,10 @@ export const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarNavDropdown'>
           <ul className='navbar-nav'>
             <li className='nav-item'>
-              <a className='nav-link' href='/home'>Home</a>
+              <NavLink className='nav-link' to='/home'>Home</NavLink>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='/search'>Search Books</a>
+              <NavLink className='nav-link' to='/search'>Search Books</NavLink>
             </li>
             <li>
                 <a type='button' className='btn btn-outline-light' href='#'>Sign in</a>
